@@ -1,4 +1,7 @@
 import L from 'leaflet';
+import 'ramda';
+import FreeDraw from 'leaflet-freedraw/dist/leaflet-freedraw.web.js';
+
 import 'leaflet/dist/leaflet.css';
 /* This code is needed to properly load the images in the Leaflet CSS */
 delete L.Icon.Default.prototype._getIconUrl;
@@ -20,3 +23,5 @@ map.setView(defaultCenter, defaultZoom);
 
 basemap.addTo(map);
 marker.addTo(map);
+const freeDraw = new FreeDraw();
+map.addLayer(freeDraw);

@@ -9,7 +9,9 @@
   "author": "Ben Schroeder",
   "license": "ISC",
   "dependencies": {
-    "leaflet": "^1.4.0"
+    "leaflet": "^1.4.0",
+    "leaflet-freedraw": "^2.10.0",
+    "ramda": "^0.26.1"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
